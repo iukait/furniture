@@ -10,6 +10,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    line-height: 200%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,6 +27,12 @@ body {
     overflow: hidden;
 }
 
+.title {
+    font-size: 36px;
+    font-weight: 500;
+
+}
+
 .header {
     background-image: url(./image/header/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -33,16 +40,18 @@ body {
     background-position: center center;
     max-width: 1920px;
     color: #ffffff;
+    padding-top: 35px;
+    margin: 0 auto;
 }
 
 .header-hero-wrapper {
     width: 1760px;
-    margin: 0 auto;
+    margin: 0 auto 150px;
 }
 
 .header-wrapper {
     display: flex;
-
+    align-items: flex-start;
 }
 
 .logo-wrapper {
@@ -50,14 +59,20 @@ body {
     margin-right: auto;
 }
 
-.nav {
-    width: 500px;
-    display: flex;
-    column-gap: 60px;
-
+.logo {
+    display: block;
 }
 
-.nav-link {
+.nav {
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    margin-right: auto;
+    margin-top: 9px;
+}
+
+.nav-item-link {
     text-decoration: none;
     color: inherit;
 }
@@ -66,6 +81,303 @@ body {
     margin-left: auto;
 }
 
-.hero-cart-svg {
-    fill: #ffffff;
+.hero-cart {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    margin-top: 11px;
+}
+
+.hero-cart:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #f79489;
+    top: 3px;
+    right: 0;
+    border-radius: 4px;
+}
+
+/* hero  */
+
+.hero-title {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 40px;
+    width: 835px;
+}
+
+.hero-desc {
+    margin: 0 auto;
+    width: 574px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-search-form {
+    position: relative;
+    margin-bottom: 318px;
+}
+
+.input-hero-search {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 15px 225px 15px 19px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    font-family: inherit;
+}
+
+.btn-hero-search {
+    position: absolute;
+    top: 11px;
+    right: 41%;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 19px;
+    outline: 1px #faf5f2 solid;
+
+}
+
+.btn-hero-search:hover {
+    border: none;
+    outline: 1px #a09386 solid;
+}
+
+.input-hero-search:hover {
+    box-shadow: inset 0 0 0 2px #a09386;
+    outline: none;
+    border: none
+}
+
+.input-hero-search:focus {
+    border: none;
+    outline: 1px #a09386 solid;
+}
+
+/* slider  */
+.hero-slider {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    width: 70px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 60px;
+    list-style: none;
+}
+
+.hero-slider-item {
+    width: 10px;
+    height: 10px;
+    background-color: #fadcd9;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.hero-slider-item--active {
+    background-color: rgb(247, 148, 137);
+}
+
+/* main  */
+.main {
+    color: #564e4e;
+    width: 1760px;
+    margin: 0 auto;
+    padding-top: 98px;
+}
+
+/* advantages  */
+.advantages-title {
+    margin-bottom: 34px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 211px;
+}
+
+.advantages-item {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 86px;
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.prof {
+    background: url("./image/advantages/prof.svg") no-repeat 20px 17px;
+
+}
+
+.workflow {
+    background: url("./image/advantages/workflow.svg") no-repeat 20px 17px;
+}
+
+.trust {
+    background: url("./image/advantages/trust.svg") no-repeat 20px 17px;
+}
+
+.empl {
+    background: url("./image/advantages/empl.svg") no-repeat 20px 17px;
+}
+
+.advantages-item-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.advantages-item-desc {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.advantages-item-link {
+    color: #f79489;
+    margin-top: auto;
+}
+
+.advantages-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px solid #fadcd9;
+    box-shadow: 4px 2px 10px 2px rgba(247, 148, 137, 0.2);
+    border-radius: 10px;
+}
+
+.prof:hover {
+    background: url("./image/advantages/prof.svg") no-repeat 20px 17px;
+
+}
+
+.workflow:hover {
+    background: url("./image/advantages/workflow.svg") no-repeat 20px 17px;
+}
+
+.trust:hover {
+    background: url("./image/advantages/trust.svg") no-repeat 20px 17px;
+}
+
+.empl:hover {
+    background: url("./image/advantages/empl.svg") no-repeat 20px 17px;
+}
+
+/* idea  */
+
+.idea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.idea-context {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 870px;
+}
+
+.idea-container {
+    width: 806px;
+}
+
+.idea-context-header {
+    margin-bottom: 32px;
+}
+
+.open .show-more {
+    background: url("./image/idea/line.svg") no-repeat;
+    width: 16px;
+    height: 1px;
+    border: none;
+}
+
+.idea-img {
+    background: url("./image/idea/modern.jpg") no-repeat;
+    width: 870px;
+    height: 600px;
+    border-radius: 60px 60px 0px 60px;
+}
+
+/* acardion  */
+.acor-container {
+    margin: 20px 0;
+}
+
+.acor-container .acor-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+}
+
+.acor-container label {
+    cursor: pointer;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    margin: 0 0 5px;
+    transition: color .35s;
+    position: relative;
+}
+
+.acor-container label:before {
+    position: absolute;
+    content: "";
+    background: url("./image/idea/line.svg") no-repeat;
+    width: 16px;
+    height: 1px;
+    top: 0;
+    right: 0;
+}
+
+.acor-container label:hover {
+    color: #f79489;
+}
+
+.acor-container input {
+    display: none;
+}
+
+~~.acor-container input:checked+label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+
+.acor-container input:checked+label+.acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
 }

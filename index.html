@@ -8,65 +8,149 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;400;500;600&display=swap" rel="stylesheet">
     <title>Furniture shop</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="header-hero-wrapper">
             <div class="header-wrapper">
                 <div class="logo-wrapper">
                     <a href="index.html" class="logo">
                         <img src="./image/header/logo.svg" alt="Furniture shop logo" class="header-logo" width="119"
-                            height="35">
+                            height="45">
                     </a>
                 </div>
                 <nav class="nav">
-                    <a href="#" class="nav-link">Furniture</a>
-                    <a href="#" class="nav-link">Shop</a>
-                    <a href="#" class="nav-link">About Us</a>
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-item-link">Furniture</a>
+                    <a href="#" class="nav-item-link">Shop</a>
+                    <a href="#" class="nav-item-link">About Us</a>
+                    <a href="#" class="nav-item-link">Contact</a>
                 </nav>
                 <a href="#" class="hero-cart">
                     <svg class="hero-cart-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                        xmlns="http://www.w4.org/2000/svg">
                         <path d="M8 8V7a4 4 0 0 1 4-4v0a4 4 0 0 1 4 4v1" stroke="#fff" stroke-width="2"
                             stroke-linecap="round" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.586 7.586C3 8.172 3 9.114 3 11v3c0 3.771 0 5.657 1.172 6.828C5.343 22 7.229 22 11 22h2c3.771 0 5.657 0 6.828-1.172C21 19.657 21 17.771 21 14v-3c0-1.886 0-2.828-.586-3.414C19.828 7 18.886 7 17 7H7c-1.886 0-2.828 0-3.414.586ZM10 12a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Zm6 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
-                            fill="currentColor" />
+                            d="M4.586 7.586C4 8.172 4 9.114 4 11v4c0 4.771 0 5.657 1.172 6.828C5.444 22 7.229 22 11 22h2c4.771 0 5.657 0 6.828-1.172C21 19.657 21 17.771 21 14v-4c0-1.886 0-2.828-.586-4.414C19.828 7 18.886 7 17 7H7c-1.886 0-2.828 0-4.414.586ZM10 12a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Zm6 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
+                            fill="#fff" />
                     </svg>
                     <span class=" visually-hidden">Cart</span>
-                    <span class="cart-not-empty">
-
-                    </span>
                 </a>
             </div>
-            <section class="hero">
-                <h2 class="hero-title">Make Your Interior More Minimaistic & Modern</h2>
-                <p class="hero-desc">Bringing interiors to life, understanding the person or people living in a home
-                    is
-                    far greater need in design.</p>
-                <input type="text" class="hero-search" name="hero-search" placeholder="Search Furniture">
-                <ul class="hero-slider">
-                    <li class="hero-slider-item hero-slider-item--active">
-                        <span class="visually-hidden">Picture one.</span>
-                    </li>
-                    <li class="hero-slider-item">
-                        <span class="visually-hidden">Picture two.</span>
-                    </li>
-                    <li class="hero-slider-item">
-                        <span class="visually-hidden">Picture three.</span>
-                    </li>
-                </ul>
-            </section>
-
+        </div>
+        <section class="hero">
+            <h2 class="hero-title">Make Your Interior More Minimaistic & Modern</h2>
+            <p class="hero-desc">Bringing interiors to life, understanding the person or people living in a home
+                is
+                far greater need in design.</p>
+            <form class="hero-search-form" action="#" method="get">
+                <input type="text" class="input-hero-search" name="hero-search" placeholder="Search Furniture">
+                <button type="submit" class="btn-hero-search">
+                    <svg class="hero-search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w4.org/2000/svg">
+                        <circle cx="11" cy="11" r="5" stroke="#A09486" stroke-width="2" />
+                        <path d="m18 18-4-4" stroke="#A09486" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <span class=" visually-hidden">Search</span>
+                </button>
+            </form>
+            <ul class="hero-slider">
+                <li class="hero-slider-item hero-slider-item--active">
+                    <span class="visually-hidden">Picture one.</span>
+                </li>
+                <li class="hero-slider-item">
+                    <span class="visually-hidden">Picture two.</span>
+                </li>
+                <li class="hero-slider-item">
+                    <span class="visually-hidden">Picture three.</span>
+                </li>
+            </ul>
+        </section>
         </div>
     </header>
     <main class="main">
+        <section class="advantages">
+            <h1 class="visually-hidden"> Our advantages </h1>
+            <h2 class="advantages-title title">Why Choosing Us</h2>
+            <ul class="advantages-list">
+                <li class="advantages-item prof">
+                    <h4 class="advantages-item-title">Professionalism</h4>
+                    <p class="advantages-item-desc">We deliver the final work with great professional way.</p>
+                    <a href="#" class="advantages-item-link">more info</a>
+                </li>
+                <li class="advantages-item workflow">
+                    <h4 class="advantages-item-title">Smooth workflow</h4>
+                    <p class="advantages-item-desc">We provide the most easy smoth workflow&nbsp; of interior design.
+                    </p>
+                    <a href="#" class="advantages-item-link">more info</a>
+                </li>
+                <li class="advantages-item trust">
+                    <h4 class="advantages-item-title">Trusted Platform</h4>
+                    <p class="advantages-item-desc">People trust us since we openend the company</p>
+                    <a href="#" class="advantages-item-link">more info</a>
+                </li>
+                <li class="advantages-item empl">
+                    <h4 class="advantages-item-title">Qualified employee</h4>
+                    <p class="advantages-item-desc">Our employees are the best of the field from&nbsp;the city</p>
+                    <a href="#" class="advantages-item-link">more info</a>
+                </li>
+            </ul>
+        </section>
+        <section class="idea">
+            <div class="idea-container">
+                <h2 class="idea-context-header title">Visualize your ideas with us</h2>
+                <p class="idea-context-desc">We are ready to help you build and also realize the room design that
+                    you
+                    dream of, with our experts and also the best category recommendations from us</p>
+                <div class="acor-container">
+
+                    <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
+                    <label for="chacor1">Modern</label>
+                    <div class="acor-body">
+                        <p>Modern design is a term in the design world that refers
+                            to a
+                            house with a clean design, simple color choices, the use of materials including metal,
+                            glass, and steel, and is usually accompanied by clean lines.
+                        </p>
+                    </div>
+
+                    <input type="checkbox" name="chacor" id="chacor2" />
+                    <label for="chacor2">Contemporary</label>
+                    <div class="acor-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia illo eveniet
+                            incidunt dignissimos est delectus dicta cumque eum ullam deserunt, enim voluptate quasi iste
+                            nemo exercitationem. Possimus, impedit atque!
+                        </p>
+                    </div>
+
+                    <input type="checkbox" name="chacor" id="chacor3" />
+                    <label for="chacor3">Minimalis</label>
+                    <div class="acor-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia illo eveniet
+                            incidunt dignissimos est delectus dicta cumque eum ullam deserunt, enim voluptate quasi iste
+                            nemo exercitationem. Possimus, impedit atque!
+                        </p>
+                    </div>
+                    <input type="checkbox" name="chacor" id="chacor4" />
+                    <label for="chacor4">Industrial</label>
+                    <div class="acor-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia illo eveniet
+                            incidunt dignissimos est delectus dicta cumque eum ullam deserunt, enim voluptate quasi iste
+                            nemo exercitationem. Possimus, impedit atque!
+                        </p>
+                    </div>
+
+                </div>
+
+                <a href="#" class="idea-category-link">See more catagory</a>
+            </div>
+            </div>
+            <div class="idea-img">
+            </div>
+        </section>
 
     </main>
     <footer class="footer">
